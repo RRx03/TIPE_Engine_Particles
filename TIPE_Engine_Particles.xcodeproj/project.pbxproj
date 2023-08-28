@@ -10,16 +10,33 @@
 		26893AB92A9B62BA00386154 /* TIPE_EngineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893AB82A9B62BA00386154 /* TIPE_EngineApp.swift */; };
 		26893ABB2A9B62BA00386154 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893ABA2A9B62BA00386154 /* ContentView.swift */; };
 		26893ABD2A9B62BC00386154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26893ABC2A9B62BC00386154 /* Assets.xcassets */; };
-		26893AC02A9B62BC00386154 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26893ABF2A9B62BC00386154 /* Preview Assets.xcassets */; };
+		26893AC82A9B632300386154 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893AC72A9B632300386154 /* MetalView.swift */; };
+		26893ACC2A9B643D00386154 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893ACB2A9B643D00386154 /* Renderer.swift */; };
+		26893AD02A9B661000386154 /* Matrices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893ACF2A9B661000386154 /* Matrices.swift */; };
+		26893AD32A9B6AAB00386154 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893AD22A9B6AAB00386154 /* Protocols.swift */; };
+		26893AD62A9B8DA700386154 /* shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 26893AD52A9B8DA700386154 /* shader.metal */; };
+		26893AD92A9B9AA300386154 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893AD82A9B9AA300386154 /* Particle.swift */; };
+		26893ADB2A9BA34700386154 /* CommonVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893ADA2A9BA34700386154 /* CommonVariables.swift */; };
+		26893ADD2A9BAE9300386154 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893ADC2A9BAE9300386154 /* Camera.swift */; };
+		26893ADF2A9BB1EF00386154 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26893ADE2A9BB1EF00386154 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26893AB52A9B62BA00386154 /* TIPE_Engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIPE_Engine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26893AB52A9B62BA00386154 /* TIPE_Engine_Particles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIPE_Engine_Particles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26893AB82A9B62BA00386154 /* TIPE_EngineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIPE_EngineApp.swift; sourceTree = "<group>"; };
 		26893ABA2A9B62BA00386154 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26893ABC2A9B62BC00386154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		26893ABF2A9B62BC00386154 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26893AC12A9B62BC00386154 /* TIPE_Engine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TIPE_Engine.entitlements; sourceTree = "<group>"; };
+		26893AC72A9B632300386154 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		26893ACB2A9B643D00386154 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		26893ACD2A9B64CC00386154 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		26893ACF2A9B661000386154 /* Matrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrices.swift; sourceTree = "<group>"; };
+		26893AD22A9B6AAB00386154 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		26893AD52A9B8DA700386154 /* shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shader.metal; sourceTree = "<group>"; };
+		26893AD82A9B9AA300386154 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		26893ADA2A9BA34700386154 /* CommonVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonVariables.swift; sourceTree = "<group>"; };
+		26893ADC2A9BAE9300386154 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		26893ADE2A9BB1EF00386154 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +61,7 @@
 		26893AB62A9B62BA00386154 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26893AB52A9B62BA00386154 /* TIPE_Engine.app */,
+				26893AB52A9B62BA00386154 /* TIPE_Engine_Particles.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,29 +69,78 @@
 		26893AB72A9B62BA00386154 /* TIPE_Engine */ = {
 			isa = PBXGroup;
 			children = (
-				26893AB82A9B62BA00386154 /* TIPE_EngineApp.swift */,
-				26893ABA2A9B62BA00386154 /* ContentView.swift */,
+				26893ACD2A9B64CC00386154 /* Common.h */,
+				26893ADA2A9BA34700386154 /* CommonVariables.swift */,
+				26893ACA2A9B643000386154 /* Main */,
+				26893AD42A9B8D8A00386154 /* Shader */,
+				26893AD72A9B9A8E00386154 /* Models */,
+				26893ACE2A9B652900386154 /* Maths */,
+				26893AC92A9B633100386154 /* Application */,
+				26893AD12A9B6A8300386154 /* Protocols */,
 				26893ABC2A9B62BC00386154 /* Assets.xcassets */,
 				26893AC12A9B62BC00386154 /* TIPE_Engine.entitlements */,
-				26893ABE2A9B62BC00386154 /* Preview Content */,
 			);
 			path = TIPE_Engine;
 			sourceTree = "<group>";
 		};
-		26893ABE2A9B62BC00386154 /* Preview Content */ = {
+		26893AC92A9B633100386154 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				26893ABF2A9B62BC00386154 /* Preview Assets.xcassets */,
+				26893AB82A9B62BA00386154 /* TIPE_EngineApp.swift */,
+				26893ABA2A9B62BA00386154 /* ContentView.swift */,
+				26893AC72A9B632300386154 /* MetalView.swift */,
 			);
-			path = "Preview Content";
+			path = Application;
+			sourceTree = "<group>";
+		};
+		26893ACA2A9B643000386154 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				26893ACB2A9B643D00386154 /* Renderer.swift */,
+				26893ADC2A9BAE9300386154 /* Camera.swift */,
+				26893ADE2A9BB1EF00386154 /* GameScene.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		26893ACE2A9B652900386154 /* Maths */ = {
+			isa = PBXGroup;
+			children = (
+				26893ACF2A9B661000386154 /* Matrices.swift */,
+			);
+			path = Maths;
+			sourceTree = "<group>";
+		};
+		26893AD12A9B6A8300386154 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				26893AD22A9B6AAB00386154 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		26893AD42A9B8D8A00386154 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				26893AD52A9B8DA700386154 /* shader.metal */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		26893AD72A9B9A8E00386154 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26893AD82A9B9AA300386154 /* Particle.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		26893AB42A9B62BA00386154 /* TIPE_Engine */ = {
+		26893AB42A9B62BA00386154 /* TIPE_Engine_Particles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26893AC42A9B62BC00386154 /* Build configuration list for PBXNativeTarget "TIPE_Engine" */;
+			buildConfigurationList = 26893AC42A9B62BC00386154 /* Build configuration list for PBXNativeTarget "TIPE_Engine_Particles" */;
 			buildPhases = (
 				26893AB12A9B62BA00386154 /* Sources */,
 				26893AB22A9B62BA00386154 /* Frameworks */,
@@ -84,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = TIPE_Engine;
+			name = TIPE_Engine_Particles;
 			productName = TIPE_Engine;
-			productReference = 26893AB52A9B62BA00386154 /* TIPE_Engine.app */;
+			productReference = 26893AB52A9B62BA00386154 /* TIPE_Engine_Particles.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 26893AB02A9B62BA00386154 /* Build configuration list for PBXProject "TIPE_Engine" */;
+			buildConfigurationList = 26893AB02A9B62BA00386154 /* Build configuration list for PBXProject "TIPE_Engine_Particles" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26893AB42A9B62BA00386154 /* TIPE_Engine */,
+				26893AB42A9B62BA00386154 /* TIPE_Engine_Particles */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +193,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26893AC02A9B62BC00386154 /* Preview Assets.xcassets in Resources */,
 				26893ABD2A9B62BC00386154 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26893ACC2A9B643D00386154 /* Renderer.swift in Sources */,
+				26893AC82A9B632300386154 /* MetalView.swift in Sources */,
 				26893ABB2A9B62BA00386154 /* ContentView.swift in Sources */,
+				26893AD02A9B661000386154 /* Matrices.swift in Sources */,
+				26893AD32A9B6AAB00386154 /* Protocols.swift in Sources */,
+				26893ADF2A9BB1EF00386154 /* GameScene.swift in Sources */,
+				26893AD92A9B9AA300386154 /* Particle.swift in Sources */,
+				26893ADD2A9BAE9300386154 /* Camera.swift in Sources */,
+				26893ADB2A9BA34700386154 /* CommonVariables.swift in Sources */,
 				26893AB92A9B62BA00386154 /* TIPE_EngineApp.swift in Sources */,
+				26893AD62A9B8DA700386154 /* shader.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TIPE_Engine/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = V973K8L7V4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -280,9 +354,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "romanroux.TIPE-Engine";
+				PRODUCT_BUNDLE_IDENTIFIER = "romanroux.TIPE-Engine-Particles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = TIPE_Engine/Common.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -296,7 +371,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TIPE_Engine/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = V973K8L7V4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -307,9 +382,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "romanroux.TIPE-Engine";
+				PRODUCT_BUNDLE_IDENTIFIER = "romanroux.TIPE-Engine-Particles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = TIPE_Engine/Common.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -317,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26893AB02A9B62BA00386154 /* Build configuration list for PBXProject "TIPE_Engine" */ = {
+		26893AB02A9B62BA00386154 /* Build configuration list for PBXProject "TIPE_Engine_Particles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26893AC22A9B62BC00386154 /* Debug */,
@@ -326,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26893AC42A9B62BC00386154 /* Build configuration list for PBXNativeTarget "TIPE_Engine" */ = {
+		26893AC42A9B62BC00386154 /* Build configuration list for PBXNativeTarget "TIPE_Engine_Particles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26893AC52A9B62BC00386154 /* Debug */,
