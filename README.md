@@ -1,6 +1,6 @@
 # TIPE_Engine_Particles
 
-Uncompiled Metal (MSL/MTK) 3D Rendering/Physics Engine.
+Metal (MSL/MTK) 3D Rendering/Physics Engine - TIPE 2024
 
 Features incoming : 
 - Physics for Particles
