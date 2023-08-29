@@ -110,6 +110,8 @@ extension Renderer: MTKViewDelegate {
         gameScene.sceneUpdate(deltaTime: deltaTime)
         
         uniform.viewMatrix = gameScene.camera.viewMatrix
+        uniform.deltaTime = deltaTime;
+
 
         if (commonVariables.wireframe) {renderEncoder.setTriangleFillMode(.lines)}
         

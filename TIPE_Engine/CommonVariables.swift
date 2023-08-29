@@ -10,7 +10,7 @@ enum commonVariables {
     
     static var wireframe : Bool = false
     
-    static var particleCount : Int = 1000 //up to 100_000
+    static var particleCount : Int = 100 //up to 100_000
     static var particleRadius : Float = 0.1
     static var meshPrecision : UInt32 = 10
     static var zoneRadius : Float = 3

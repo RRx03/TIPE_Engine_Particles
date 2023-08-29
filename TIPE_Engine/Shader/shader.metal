@@ -1,5 +1,6 @@
 
 #include <metal_stdlib>
+#include<metal_math>
 #import "../Common.h"
 using namespace metal;
 
@@ -17,12 +18,13 @@ struct VertexOut
 };
 struct Particle{
     float4x4 modelMatrix;
+    float3 velocity;
     
     
 };
 
 vertex VertexOut vertex_main(const VertexIn vertexIn [[stage_in]],
-                             constant Particle *particles [[buffer(1)]],
+                             device Particle *particles [[buffer(1)]],
                              constant Uniforms &uniforms [[buffer(11)]],
                              uint instanceid [[instance_id]])
 {
@@ -31,6 +33,16 @@ vertex VertexOut vertex_main(const VertexIn vertexIn [[stage_in]],
     Particle particle = particles[instanceid];
     out.position = uniforms.projectionMatrix * uniforms.viewMatrix * particle.modelMatrix * vertexIn.position;
     out.normal = vertexIn.normal;
+    float3 position = particle.modelMatrix[3].xyz;
+    particle.velocity = float3(-1, 0, 0);
+    position += particle.velocity*uniforms.deltaTime;
+    
+    
+    
+    
+    particle.modelMatrix[3] = float4(position, 1);
+    particles[instanceid] = particle;
+    
     return out;
 }
 
