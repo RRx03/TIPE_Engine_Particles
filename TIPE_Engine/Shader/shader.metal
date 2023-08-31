@@ -3,7 +3,7 @@
 #include<metal_math>
 #import "../Common.h"
 using namespace metal;
-
+//test
 struct VertexIn
 {
     float4 position [[attribute(0)]];
