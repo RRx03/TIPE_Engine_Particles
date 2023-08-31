@@ -3,7 +3,9 @@
 #include<metal_math>
 #import "../Common.h"
 using namespace metal;
-//test
+
+
+
 struct VertexIn
 {
     float4 position [[attribute(0)]];
@@ -16,12 +18,6 @@ struct VertexOut
     float3 normal;
 
 };
-struct Particle{
-    float4x4 modelMatrix;
-    float3 velocity;
-    
-    
-};
 
 vertex VertexOut vertex_main(const VertexIn vertexIn [[stage_in]],
                              device Particle *particles [[buffer(1)]],
@@ -33,9 +29,6 @@ vertex VertexOut vertex_main(const VertexIn vertexIn [[stage_in]],
     Particle particle = particles[instanceid];
     out.position = uniforms.projectionMatrix * uniforms.viewMatrix * particle.modelMatrix * vertexIn.position;
     out.normal = vertexIn.normal;
-    float3 position = particle.modelMatrix[3].xyz;
-    particle.velocity = float3(-1, 0, 0);
-    position += particle.velocity*uniforms.deltaTime;
     
     
     

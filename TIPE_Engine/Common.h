@@ -19,6 +19,16 @@ typedef struct {
 } Params;
 
 
+typedef struct {
+    simd_float3 position;
+    simd_float3 velocity;
+    simd_float3 currentForce;
+    float density;
+    float pressure;
+    
+}Particle;
+
+
 
 
 

@@ -20,9 +20,4 @@ struct ParticleMesh {
     }()
     
 }
-struct Particle {
-    var modelMatrix : float4x4 = float4x4.identity
-    var velocity : float3 = [0, 0, 0]
-}
-
 
